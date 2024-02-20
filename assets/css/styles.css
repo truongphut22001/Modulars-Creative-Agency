@@ -56,11 +56,17 @@ button {
     padding: 28px 0 21px;
 }
 
-.header__fixed {
+.header .header__top {
+    padding-bottom: 13px;
+    border-bottom: 2px solid #dddcdc;
+    /* Chỉnh lại cái đường border này sau */
+}
+
+/* .header__fixed {
     position: sticky;
     top: -28px;
     z-index: 1;
-}
+} */
 
 .header__top {
     display: flex;
@@ -116,4 +122,181 @@ button {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.55;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    margin-top: 103px;
+}
+
+.hero__heading {
+    font-family: Public Sans;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    width: 368px;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 341px;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero__row {
+    display: flex;
+    margin-top: 42px;
+    gap: 36px;
+}
+
+.hero__row .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.hero__media {
+    margin-right: 25px;
+    margin-top: 60px;
+    max-width: 646px;
+}
+
+.hero__images {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+}
+
+.hero__img:nth-of-type(2) {
+    transform: translateY(20%);
+}
+
+.hero__curve {
+    position: absolute;
+    right: 273px;
+    top: -32px;
+}
+
+.hero__flower {
+    position: absolute;
+    left: -210px;
+    top: -15px;
+}
+
+.hero__curve-2 {
+    position: absolute;
+    bottom: -164px;
+    right: 71px;
+    transform: rotate(-5deg);
+}
+
+.hero__flower-2 {
+    position: absolute;
+    bottom: -105px;
+    right: 30px;
+}
+
+/* Clients */
+.client {
+    padding-top: 207px;
+    padding-bottom: 53px;
+}
+
+.client__images {
+    display: flex;
+    padding: 77px 121px;
+    background-color: #e2eddf;
+    border-radius: 100.5px;
+}
+
+.client__img:nth-of-type(2) {
+    margin-left: 47px;
+}
+.client__img:nth-of-type(3) {
+    margin-left: 50px;
+}
+.client__img:nth-of-type(4) {
+    margin-left: 11px;
+}
+.client__img:nth-of-type(5) {
+    margin-left: 64px;
+}
+.client__img:nth-of-type(6) {
+    margin-left: 64px;
+}
+
+/* Service */
+.service {
+    padding-top: 53px;
+}
+
+.service__sub-title {
+    color: #152427;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.service__title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__title {
+    margin-top: 12px;
+    color: #152427;
+    width: 520px;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.service_btn {
+    display: flex;
+    gap: 17px;
+}
+
+.circle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #e2eddf;
+    color: #152427;
+    transition: 0.3s;
+}
+
+.right-arrow {
+    transform: rotate(180deg);
+}
+
+.circle-btn:hover {
+    background: #143c3c;
+}
+
+.circle-btn:hover .arrow {
+    color: white;
 }
