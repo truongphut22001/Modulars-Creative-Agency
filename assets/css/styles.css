@@ -61,10 +61,9 @@ button {
     padding: 28px 0 21px;
 }
 
-.header .header__top {
-    padding-bottom: 13px;
-    border-bottom: 2px solid #dddcdc;
-    /* Chỉnh lại cái đường border này sau */
+.header__top {
+    display: flex;
+    align-items: center;
 }
 
 /* .header__fixed {
@@ -72,11 +71,6 @@ button {
     top: -28px;
     z-index: 1;
 } */
-
-.header__top {
-    display: flex;
-    align-items: center;
-}
 
 .navbar {
     margin-left: auto;
@@ -111,7 +105,7 @@ button {
 .navbar__link--active::after {
     position: absolute;
     left: 22px;
-    bottom: -25px;
+    bottom: -27px;
     display: block;
     content: "";
     width: 16px;
@@ -360,6 +354,10 @@ button {
     gap: 16px;
 }
 
+.service__card {
+    min-height: 477px;
+}
+
 .service__card:hover {
     border-radius: 20px;
     background: #fff;
@@ -385,7 +383,6 @@ button {
 }
 
 .service__desc {
-    height: 72px;
     max-width: 268px;
     margin-top: 18px;
     color: #7d8188;
